@@ -22,14 +22,18 @@ $enable-print-styles:       true;
 #nglmain {
   /* necessary to hide collapsed sidebar */
   overflow-x: hidden;
-  align-items: stretch; }
+  align-items: stretch;
+  height: 625px;
+}
 
 #datapanel {
   /* for the animation */
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  overflow-y: scroll;
+}
 
 .collapsed {
   /* hide it for small displays*/
@@ -46,7 +50,8 @@ $enable-print-styles:       true;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+}
 
 // Fonts
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

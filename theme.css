@@ -7,14 +7,18 @@
 #nglmain {
   /* necessary to hide collapsed sidebar */
   overflow-x: hidden;
-  align-items: stretch; }
+  align-items: stretch;
+  height: 625px;
+}
 
 #datapanel {
   /* for the animation */
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  overflow-y: scroll;
+}
 
 .collapsed {
   /* hide it for small displays*/
@@ -31,7 +35,8 @@
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+}
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
