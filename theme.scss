@@ -43,7 +43,7 @@ $enable-print-styles:       true;
   .collapsed {
     display: block;
     /* same width as sidebar */
-    margin-right: -25%; } }
+    margin-right: -33.5%; } }
 
 #viewpanel {
   /* for the animation */
@@ -52,6 +52,7 @@ $enable-print-styles:       true;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 
 // Fonts
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

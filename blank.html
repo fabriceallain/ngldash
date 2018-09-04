@@ -66,54 +66,123 @@
           <div class="card-body p-0">
             <div class="container-fluid h-100">
               <div class="row" id="nglmain">
-                <div class="col-9 p-1 bg-white text-dark d-flex justify-content-between" id="viewpanel">
+                <div class="col-8 p-1 bg-white text-dark d-flex justify-content-between"
+                     id="viewpanel">
                   <div class="d-flex flex-column">
                     <div class="mt-auto">
-                    <a href="#" class="toggle-datapanel text-dark">
-                      <i class="fas fa-sliders-h"></i>
-                    </a>
+                      <a class="text-dark" data-toggle="collapse"
+                         href="#representationPanel" role="button"
+                         aria-expanded="false"
+                         aria-controls="representationPanel">
+                        <i class="fas fa-sliders-h"></i>
+                      </a>
                     </div>
 
                   </div>
                   <div class="d-flex flex-column align-items-end">
-                     <div class="mb-auto">
-                    <a href="#" class="toggle-datapanel text-dark">
-                      <i class="fas fa-stream"></i>
-                    </a>
-                     </div>
+                    <div class="mb-auto">
+                      <a href="#" class="toggle-datapanel text-dark">
+                        <i class="fas fa-object-group"></i>
+                      </a>
+                    </div>
                     <div>
                       <a href="#" class="toggle-datapanel  text-dark">
-                      <i class="fas fa-adjust"></i>
-                    </a>
-                      <a href="#" class="toggle-datapanel  text-dark">
-                      <i class="far fa-eye"></i>
-                    </a>
-                      <a href="#" class="toggle-datapanel  text-dark">
-                      <i class="fas fa-circle-notch fa-spin"></i>
-                    </a>
-                    <a href="#" class="toggle-datapanel  text-dark">
-                      <i class="fas fa-camera"></i>
-                    </a>
-                      <a href="#" class="toggle-datapanel  text-dark">
-                      <i class="far fa-dot-circle"></i>
-                    </a>
+                        <i class="fas fa-adjust"></i>
+                      </a>
+                      <a href="#" class="dropdown show text-dark"
+                         id="viewModeMenuLink"
+                         data-toggle="dropdown" aria-haspopup="true"
+                         aria-expanded="false">
+                        <i class="fas fa-ruler-combined"></i>
+                      </a>
+
+
+                      <div class="dropdown-menu"
+                           aria-labelledby="viewModeMenuLink">
+                        <form class="px-2 py-1">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio"
+                                   name="exampleRadios" id="exampleRadios1"
+                                   value="option1" checked>
+                            <label class="form-check-label"
+                                   for="exampleRadios1">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio"
+                                   name="exampleRadios" id="exampleRadios2"
+                                   value="option2">
+                            <label class="form-check-label"
+                                   for="exampleRadios2">
+                              Second default radio
+                            </label>
+                          </div>
+                          <div class="form-check disabled">
+                            <input class="form-check-input" type="radio"
+                                   name="exampleRadios" id="exampleRadios3"
+                                   value="option3" disabled>
+                            <label class="form-check-label"
+                                   for="exampleRadios3">
+                              Disabled radio
+                            </label>
+                          </div>
+                        </form>
                       </div>
+
+
+                      <div class="dropdown-menu"
+                           aria-labelledby="viewModeMenuLinkOld">
+                        <form>
+                          <!--<a class="dropdown-item" href="#">Action</a>-->
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1"
+                                   name="customRadio"
+                                   class="custom-control-input">
+                            <label class="custom-control-label"
+                                   for="customRadio1">Toggle this custom
+                              radio</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2"
+                                   name="customRadio"
+                                   class="custom-control-input">
+                            <label class="custom-control-label"
+                                   for="customRadio2">Or toggle this other
+                              custom
+                              radio</label>
+                          </div>
+                        </form>
+                      </div>
+
+                      <a href="#" class="toggle-datapanel  text-dark">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                      </a>
+                      <a href="#" class="toggle-datapanel  text-dark">
+                        <i class="fas fa-camera"></i>
+                      </a>
+
+                    </div>
                   </div>
 
 
                 </div>
-                <div class="col-3 p-0 border bg-light d-flex flex-column"
+                <div class="col-4 p-0 border bg-light d-flex flex-column"
                      id="datapanel">
                   <div>
                     <ul class="list-group list-group-flush mb-auto w-100">
                       <li class="list-group-item">
                         <div class="d-flex w-100 justify-content-center">
-                          <h5 class="mb-0">Data</h5>
+                          <h4 class="mb-0">Model</h4>
                         </div>
                       </li>
                       <li class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between align-items-center">
-                          <h6 class="mb-0">Model A</h6>
+                          <a data-toggle="collapse" href="#modelACollapse"
+                             role="button" aria-expanded="false"
+                             aria-controls="modelACollapse"><h6
+                                  class="mb-0 nav-link text-dark">Model A</h6>
+                          </a>
                           <ul class="nav nav-pills card-header-pills float-right">
                             <li class="nav-item">
                               <a class="nav-link text-danger" href="#">
@@ -131,6 +200,64 @@
                               </a>
                             </li>
                           </ul>
+                        </div>
+                        <div class="list-group bg-transparent collapse"
+                             id="modelACollapse">
+                          <div class="list-group-item d-flex w-100 justify-content-between align-items-center bg-transparent">
+                            <small>Backbone</small>
+                            <ul class="nav nav-pills card-header-pills float-right">
+                              <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">
+                                  <i class="far fa-dot-circle"></i>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">
+                                  <i class="fas fa-crosshairs"></i>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">
+                                  <i class="far fa-eye"></i>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">
+                                  <i class="far fa-trash-alt"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="list-group-item d-flex w-100 justify-content-between align-items-center bg-transparent">
+                            <small>Licorice</small>
+                            <ul class="nav nav-pills card-header-pills float-right">
+                              <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">
+                                  <i class="far fa-dot-circle"></i>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">
+                                  <i class="fas fa-crosshairs"></i>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">
+                                  <i class="far fa-eye"></i>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">
+                                  <i class="far fa-trash-alt"></i>
+                                </a>
+                              </li>
+
+                            </ul>
+                          </div>
+                          <button type="button"
+                                  class="list-group-item btn-outline-success btn-block rounded-0 border-bottom-0">
+                            <i class="fas fa-plus"></i>
+                          </button>
                         </div>
                       </li>
                       <li class="list-group-item list-group-item-action">
@@ -316,6 +443,9 @@
                   </div>
                 </div>
               </div>
+              <div class="row collapse" id="representationPanel">
+                Test
+              </div>
             </div>
           </div>
         </div>
@@ -336,7 +466,7 @@
     $(document).ready(function () {
         $(".toggle-datapanel").click(function () {
             $("#datapanel").toggleClass("collapsed");
-            $("#viewpanel").toggleClass("col-12 col-9");
+            $("#viewpanel").toggleClass("col-12 col-8");
 
             return false;
         });

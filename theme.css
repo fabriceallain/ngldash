@@ -28,7 +28,7 @@
   .collapsed {
     display: block;
     /* same width as sidebar */
-    margin-right: -25%; } }
+    margin-right: -33.5%; } }
 
 #viewpanel {
   /* for the animation */
@@ -37,6 +37,8 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
+
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
