@@ -66,104 +66,103 @@
           <div class="card-body p-0">
             <div class="container-fluid h-100">
               <div class="row" id="nglmain">
-                <div class="col-8 p-1 bg-white text-dark d-flex justify-content-between"
+                <div class="col-8  bg-white text-dark d-flex justify-content-between p-0"
                      id="viewpanel">
-                  <div class="d-flex flex-column">
-                    <div class="mt-auto">
-                      <a class="text-dark" data-toggle="collapse"
-                         href="#representationPanel" role="button"
-                         aria-expanded="false"
-                         aria-controls="representationPanel">
-                        <i class="fas fa-sliders-h"></i>
-                      </a>
+
+                  <div style="position: absolute;top:0.5rem;right: 0.5rem;">
+                    <a href="#" class="toggle-datapanel text-dark">
+                      <i class="fas fa-object-group"></i>
+                    </a>
+                  </div>
+
+                  <div style="position: absolute;bottom: 0.5rem;left:0.5rem;">
+                    <a class="text-dark" data-toggle="collapse"
+                       href="#representationPanel" role="button"
+                       aria-expanded="false"
+                       aria-controls="representationPanel">
+                      <i class="fas fa-sliders-h"></i>
+                    </a>
+                  </div>
+
+                  <div style="position: absolute;bottom: 0.5rem;right: 0.5rem;">
+                    <a href="#" class="toggle-datapanel  text-dark">
+                      <i class="fas fa-adjust"></i>
+                    </a>
+                    <a href="#" class="dropdown show text-dark"
+                       id="viewModeMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                      <i class="fas fa-ruler-combined"></i>
+                    </a>
+
+
+                    <div class="dropdown-menu"
+                         aria-labelledby="viewModeMenuLink">
+                      <form class="px-2 py-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio"
+                                 name="exampleRadios" id="exampleRadios1"
+                                 value="option1" checked>
+                          <label class="form-check-label"
+                                 for="exampleRadios1">
+                            Default radio
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio"
+                                 name="exampleRadios" id="exampleRadios2"
+                                 value="option2">
+                          <label class="form-check-label"
+                                 for="exampleRadios2">
+                            Second default radio
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <input class="form-check-input" type="radio"
+                                 name="exampleRadios" id="exampleRadios3"
+                                 value="option3" disabled>
+                          <label class="form-check-label"
+                                 for="exampleRadios3">
+                            Disabled radio
+                          </label>
+                        </div>
+                      </form>
                     </div>
+
+
+                    <div class="dropdown-menu"
+                         aria-labelledby="viewModeMenuLinkOld">
+                      <form>
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio1"
+                                 name="customRadio"
+                                 class="custom-control-input">
+                          <label class="custom-control-label"
+                                 for="customRadio1">Toggle this custom
+                            radio</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="customRadio2"
+                                 name="customRadio"
+                                 class="custom-control-input">
+                          <label class="custom-control-label"
+                                 for="customRadio2">Or toggle this other
+                            custom
+                            radio</label>
+                        </div>
+                      </form>
+                    </div>
+
+                    <a href="#" class="toggle-datapanel  text-dark">
+                      <i class="fas fa-circle-notch fa-spin"></i>
+                    </a>
+                    <a href="#" class="toggle-datapanel  text-dark">
+                      <i class="fas fa-camera"></i>
+                    </a>
 
                   </div>
-                  <div class="d-flex flex-column align-items-end">
-                    <div class="mb-auto">
-                      <a href="#" class="toggle-datapanel text-dark">
-                        <i class="fas fa-object-group"></i>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="#" class="toggle-datapanel  text-dark">
-                        <i class="fas fa-adjust"></i>
-                      </a>
-                      <a href="#" class="dropdown show text-dark"
-                         id="viewModeMenuLink"
-                         data-toggle="dropdown" aria-haspopup="true"
-                         aria-expanded="false">
-                        <i class="fas fa-ruler-combined"></i>
-                      </a>
-
-
-                      <div class="dropdown-menu"
-                           aria-labelledby="viewModeMenuLink">
-                        <form class="px-2 py-1">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio"
-                                   name="exampleRadios" id="exampleRadios1"
-                                   value="option1" checked>
-                            <label class="form-check-label"
-                                   for="exampleRadios1">
-                              Default radio
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio"
-                                   name="exampleRadios" id="exampleRadios2"
-                                   value="option2">
-                            <label class="form-check-label"
-                                   for="exampleRadios2">
-                              Second default radio
-                            </label>
-                          </div>
-                          <div class="form-check disabled">
-                            <input class="form-check-input" type="radio"
-                                   name="exampleRadios" id="exampleRadios3"
-                                   value="option3" disabled>
-                            <label class="form-check-label"
-                                   for="exampleRadios3">
-                              Disabled radio
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-
-
-                      <div class="dropdown-menu"
-                           aria-labelledby="viewModeMenuLinkOld">
-                        <form>
-                          <!--<a class="dropdown-item" href="#">Action</a>-->
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1"
-                                   name="customRadio"
-                                   class="custom-control-input">
-                            <label class="custom-control-label"
-                                   for="customRadio1">Toggle this custom
-                              radio</label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2"
-                                   name="customRadio"
-                                   class="custom-control-input">
-                            <label class="custom-control-label"
-                                   for="customRadio2">Or toggle this other
-                              custom
-                              radio</label>
-                          </div>
-                        </form>
-                      </div>
-
-                      <a href="#" class="toggle-datapanel  text-dark">
-                        <i class="fas fa-circle-notch fa-spin"></i>
-                      </a>
-                      <a href="#" class="toggle-datapanel  text-dark">
-                        <i class="fas fa-camera"></i>
-                      </a>
-
-                    </div>
-                  </div>
+                  <!--</div>-->
 
 
                 </div>
@@ -462,6 +461,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/preact/8.2.9/preact.min.js"
+        integrity="sha256-GIsYH1Lda96ZES0PVtA6nu3Xhml5rUstXr+jvBWVvno="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0/redux.min.js"
+        integrity="sha256-hfNRBJsmJ7BaeBvsxVPdVeDbdEVV/MFNBm4BRLc72OY="
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ngl@0.10.4/dist/ngl.js"></script>
 <script>
     $(document).ready(function () {
         $(".toggle-datapanel").click(function () {
@@ -472,12 +478,15 @@
         });
     });
 </script>
-<pingendo onclick="window.open('https://pingendo.com/', '_blank')"
-          style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">
-  Made with Pingendo Free&nbsp;&nbsp;
-  <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png"
-       class="d-block" alt="Pingendo logo" height="16">
-</pingendo>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var stage = new NGL.Stage("viewpanel", {
+            backgroundColor: "white",
+            hoverTimeout: 150
+        });
+        stage.loadFile("rcsb://1crn", {defaultRepresentation: true});
+    });
+</script>
 </body>
 
 </html>
